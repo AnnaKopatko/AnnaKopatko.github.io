@@ -1,5 +1,7 @@
 ---
-title: Welcome to my blog
+title: Anna Kopatko's Blog 
 ---
 
-# Example section one 
+## About me
+
+I am a deep learning ingeneer stationed in Berlin, Germany. 
