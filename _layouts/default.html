@@ -9,7 +9,13 @@
 </head>
 <body>
     <main>
-        {{ content }}
+        {% if page.layout == 'post' or page.collection == 'posts' %}
+            <div class="post-content">
+                {{ content }}
+            </div>
+        {% else %}
+            {{ content }}
+        {% endif %}
     </main>
 </body>
 </html>

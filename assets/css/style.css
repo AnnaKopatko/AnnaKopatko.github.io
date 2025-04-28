@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     background-color: black;
     color: white;
@@ -20,14 +21,19 @@ img {
 }
 
 p, h1, h2, h3, ul, ol {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 a {
     color: lightblue;
 }
 
-
+/* Post page specific styling */
+.post-content {
+    max-width: 650px;           /* Narrower width for better readability */
+    margin: 0 auto;             /* Center the content */
+    padding: 20px;              /* Padding around the content */
+}
 
 /* Code blocks styling */
 pre, code {
@@ -51,4 +57,88 @@ pre code {
     padding: 0;                 /* Remove padding for code inside pre */
     border: none;               /* Remove border for code inside pre */
     background-color: transparent; /* Make background transparent for nested elements */
+}
+
+/* Typography improvements */
+h1 {
+    font-size: 2.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* Links styling */
+a:hover {
+    text-decoration: underline;
+    color: #99ccff;  /* Lighter blue on hover */
+}
+
+/* List styling */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Blockquote styling */
+blockquote {
+    border-left: 4px solid #555;
+    margin-left: 0;
+    padding-left: 20px;
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+}
+
+/* Post metadata */
+.post-date {
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    main, .container, .post, .post-content {
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
 }
