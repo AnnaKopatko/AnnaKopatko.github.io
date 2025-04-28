@@ -4,14 +4,21 @@ title: "Anna Kopatko"
 subtitle: "Perception Engineer | Deep Learning | Physics Enthusiast"
 ---
 
-<div style="margin-left: 120px; margin-right: 50px;">
+<!-- Import Manrope font -->
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- Profile Section -->
+<div style="margin-left: 120px; margin-right: 50px; font-size: 22px;">
 
 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
 
-<!-- Left side: text -->
+<!-- Left Side: Text -->
 <div style="flex: 1; min-width: 300px;">
 
-<h2>Perception Engineer | Deep Learning | Physics Enthusiast</h2>
+<h1 style="font-weight:700; font-size: 36px;">Anna Kopatko</h1>
+<h2 style="font-weight:600;">Perception Engineer | Deep Learning | Physics Enthusiast</h2>
 
 <p>I'm Anna Kopatko, a deep learning engineer based in Berlin, Germany.  
 I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a strong foundation in mathematical modeling and complex systems.</p>
@@ -24,8 +31,8 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
 
 </div>
 
-<!-- Right side: photo -->
-<div style="flex: 0 0 350px; text-align: center;">
+<!-- Right Side: Photo -->
+<div style="flex: 0 0 320px; text-align: center;">
 
 <img src="/assets/anna.jpg" alt="Anna Kopatko" style="width: 320px; height: 320px; object-fit: cover; border-radius: 100%; margin-bottom: 20px;">
 
@@ -35,17 +42,18 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
 
 </div>
 
-</div> <!-- end margin wrapper -->
+</div>
 
 ---
 
 # Latest Posts
 
-<div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
+<!-- Posts Section -->
+<div style="display: flex; flex-direction: column; gap: 20px; margin-top: 40px; margin-left: 120px; margin-right: 50px;">
 
 {% for post in site.posts %}
   <div>
-    <a href="{{ post.url }}" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #cccccc; text-decoration: none;">
+    <a href="{{ post.url }}" style="font-family: 'Manrope', sans-serif; font-size: 20px; color: #cccccc; text-decoration: none;">
       {{ post.title }}
     </a>
     <div style="font-size: 14px; color: #888888;">{{ post.date | date: "%B %d, %Y" }}</div>

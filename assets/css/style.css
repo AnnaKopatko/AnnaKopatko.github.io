@@ -1,9 +1,18 @@
 body {
-    background-color: #0d0603;
-    color: #f0f0f0;
-    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #000000; /* pure black */
+    color: #eeeeee; /* soft white text */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300; /* thin by default */
+    font-size: 18px;
     line-height: 1.6;
-    padding: 20px;
+    padding: 30px;
+    margin: 0;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600; /* headings slightly bolder */
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
   
   a {
@@ -12,12 +21,8 @@ body {
   }
   
   a:hover {
+    color: #ffffff;
     text-decoration: underline;
-  }
-  
-  h1, h2, h3, h4 {
-    color: #f5f5f5;
-    font-weight: 600; /* slightly bolder headings */
   }
   
   img {
@@ -31,5 +36,13 @@ body {
     color: #ffffff;
     padding: 5px;
     border-radius: 5px;
+  }
+  
+  /* Remove any unwanted box styling from pages/posts */
+  .page-content, article {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
   }
   

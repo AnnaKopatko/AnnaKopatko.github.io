@@ -1,55 +1,24 @@
----
-layout: default
-title: "Anna Kopatko"
-subtitle: "Perception Engineer | Deep Learning | Physics Enthusiast"
----
+title: Anna Kopatko
+description: Deep Learning Engineer | Perception | Physics
+baseurl: "" # keep it empty unless you are using a project page
+url: "https://AnnaKopatko.github.io" # Your GitHub Pages URL
 
-<div style="margin-left: 50px; margin-right: 50px;">
+theme: minima # still use minima, but we override it with custom CSS
 
-<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
-<!-- Left side: text -->
-<div style="flex: 1; min-width: 300px;">
+# Build settings
+markdown: kramdown
+highlighter: rouge
 
-<h2>Perception Engineer | Deep Learning | Physics Enthusiast</h2>
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
 
-<p>I'm Anna Kopatko, a deep learning engineer based in Berlin, Germany.  
-I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a strong foundation in mathematical modeling and complex systems.</p>
-
-<p>Currently, I work in <b>perception engineering</b>, where I <b>research, implement, and deploy</b> diverse <b>neural network models</b> for real-world applications — including object detection, segmentation, and sensor fusion.</p>
-
-<p>I'm passionate about combining <b>physics and neural networks</b> to build <b>robust, explainable AI systems</b> that can transform scientific discovery and technology.</p>
-
-<p>Feel free to explore my projects, blog posts, and get in touch!</p>
-
-</div>
-
-<!-- Right side: photo -->
-<div style="flex: 0 0 300px; text-align: center;">
-
-<img src="/assets/anna.jpg" alt="Anna Kopatko" style="width: 250px; height: 250px; object-fit: cover; border-radius: 100%; margin-bottom: 20px;">
-
-<p><b>Berlin, Germany</b></p>
-
-</div>
-
-</div>
-
-</div> <!-- end margin wrapper -->
-
----
-
-# Latest Posts
-
-<div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px; margin-left: 50px; margin-right: 50px;">
-
-{% for post in site.posts %}
-  <div>
-    <a href="{{ post.url }}" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #cccccc; text-decoration: none;">
-      {{ post.title }}
-    </a>
-    <div style="font-size: 14px; color: #888888;">{{ post.date | date: "%B %d, %Y" }}</div>
-  </div>
-{% endfor %}
-
-</div>
+sass:
+  style: compressed
