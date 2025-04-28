@@ -41,14 +41,14 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
 
 # Latest Posts
 
-<div style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
+<div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
 
 {% for post in site.posts %}
-<div style="padding: 20px; border: 1px solid #333; border-radius: 10px; background-color: #000000;">
-    <h3><a href="{{ post.url }}" style="color: #ffcc99; text-decoration: none;">{{ post.title }}</a></h3>
-    <p style="color: #ddd;">{{ post.date | date: "%B %d, %Y" }}</p>
-    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-    <a href="{{ post.url }}" style="color: #ffcc99;">Read more →</a>
+  <div>
+    <a href="{{ post.url }}" style="font-family: 'Poppins', sans-serif; font-size: 20px; color: #cccccc; text-decoration: none;">
+      {{ post.title }}
+    </a>
+    <div style="font-size: 14px; color: #888888;">{{ post.date | date: "%B %d, %Y" }}</div>
   </div>
 {% endfor %}
 
