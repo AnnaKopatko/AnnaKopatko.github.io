@@ -4,31 +4,50 @@ title: "Anna Kopatko"
 subtitle: "Perception Engineer | Deep Learning | Physics Enthusiast"
 ---
 
-# Anna Kopatko
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
 
-<img src="/assets/anna.jpg" alt="Anna Kopatko" style="float: right; width: 200px; margin-left: 20px; border-radius: 10px;">
+<!-- Left side: text -->
+<div style="flex: 1; min-width: 300px;">
+
+# Anna Kopatko
 
 ## Perception Engineer | Deep Learning | Physics Enthusiast
 
 I'm Anna Kopatko, a deep learning engineer based in Berlin, Germany.  
-I hold a bachelor's degree in **Theoretical Physics**, where I developed a strong foundation in mathematical modeling and understanding complex systems.
+I hold a bachelor's degree in **Theoretical Physics**, where I developed a strong foundation in mathematical modeling and complex systems.
 
-Currently, I work in the field of **perception engineering**, where I **research, implement, and deploy** a wide range of **neural network models**.  
-My work spans across **object detection**, **segmentation**, **sensor fusion**, and other core perception tasks, helping intelligent systems better understand and navigate the world.
+Currently, I work in **perception engineering**, where I **research, implement, and deploy** diverse **neural network models** for real-world applications — including object detection, segmentation, and sensor fusion.
 
-I am deeply passionate about combining **physics and neural networks** to create more robust, explainable, and efficient AI.  
-I believe that merging physical principles with deep learning can **reshape the future of science, technology, and autonomous systems**.
+I'm passionate about combining **physics and neural networks** to build **robust, explainable AI systems** that can transform scientific discovery and technology.
 
-Feel free to explore my projects, blog posts, and reach out if you're interested in collaboration!
+Feel free to explore my projects, blog posts, and get in touch!
+
+</div>
+
+<!-- Right side: image and contact info -->
+<div style="flex: 0 0 250px; text-align: center;">
+
+<img src="/assets/anna.jpg" alt="Anna Kopatko" style="width: 200px; height: 200px; object-fit: cover; border-radius: 100%; margin-bottom: 20px;">
+
+**Berlin, Germany**
+
+</div>
+
+</div>
 
 ---
 
-# Blog Posts
+# Latest Posts
 
-<ul>
+<div style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
+
 {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
-  </li>
+  <div style="padding: 20px; border: 1px solid #444; border-radius: 10px; background-color: #2c1b12;">
+    <h3><a href="{{ post.url }}" style="color: #ffcc99; text-decoration: none;">{{ post.title }}</a></h3>
+    <p style="color: #ddd;">{{ post.date | date: "%B %d, %Y" }}</p>
+    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    <a href="{{ post.url }}" style="color: #ffcc99;">Read more →</a>
+  </div>
 {% endfor %}
-</ul>
+
+</div>
