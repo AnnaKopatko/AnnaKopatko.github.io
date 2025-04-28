@@ -1,44 +1,42 @@
 body {
-    background-color: #000000;
-    color: #eeeeee;
+    background-color: black;
+    color: white;
     font-family: 'Manrope', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 1.6;
     margin: 0;
-    padding: 0 30px;
-  }
-  
-  h1, h2, h3, h4 {
-    font-weight: 600;
-    color: #eeeeee;
-    margin-top: 20px;
-  }
-  
-  a {
-    color: #cccccc;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  
-  header, nav, .site-header, .site-nav, .nav, .page-header {
-    display: none !important;
-    border: none !important;
-    background: none !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  /* Make all post pages clean */
-  .page-content, .post-content, article {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-  }
-  
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.profile-img {
+    float: left;
+    width: 250px;
+    height: auto;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Ensures any post/page has the same style */
+.container img {
+    float: left;
+    width: 250px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p {
+    margin-left: 20px; /* slightly indents text as per your request */
+}
