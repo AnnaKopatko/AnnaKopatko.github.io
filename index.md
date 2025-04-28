@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Anna Kopatko"
-subtitle: "Perception Engineer | Deep Learning | Physics Enthusiast"
+subtitle: "Perception Engineer | Physics"
 ---
 
 <!-- Import Manrope font and custom CSS -->
