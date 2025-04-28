@@ -41,7 +41,7 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
 <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
 
 {% for post in site.posts %}
-  <div style="padding: 20px; border: 1px solid #444; border-radius: 10px; background-color: #2c1b12;">
+<div style="padding: 20px; border: 1px solid #333; border-radius: 10px; background-color: #000000;">
     <h3><a href="{{ post.url }}" style="color: #ffcc99; text-decoration: none;">{{ post.title }}</a></h3>
     <p style="color: #ddd;">{{ post.date | date: "%B %d, %Y" }}</p>
     <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
