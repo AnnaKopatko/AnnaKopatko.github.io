@@ -27,3 +27,28 @@ a {
     color: lightblue;
 }
 
+
+
+/* Code blocks styling */
+pre, code {
+    background-color: #333333;  /* Dark gray background */
+    color: #f8f8f8;             /* Light text for contrast */
+    border-radius: 5px;         /* Rounded corners */
+    padding: 10px;              /* Padding around code */
+    overflow-x: auto;           /* Horizontal scrolling if needed */
+    font-family: 'Courier New', monospace;  /* Monospace font */
+    margin: 15px 0;             /* Margin above and below */
+    border: 1px solid #444;     /* Subtle border */
+}
+
+/* Inline code styling */
+code {
+    padding: 2px 5px;           /* Smaller padding for inline code */
+}
+
+/* Specific styling for code blocks inside pre tags */
+pre code {
+    padding: 0;                 /* Remove padding for code inside pre */
+    border: none;               /* Remove border for code inside pre */
+    background-color: transparent; /* Make background transparent for nested elements */
+}
