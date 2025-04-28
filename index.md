@@ -4,17 +4,13 @@ title: "Anna Kopatko"
 subtitle: "Perception Engineer | Deep Learning | Physics Enthusiast"
 ---
 
-<head>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-
+<div style="margin-left: 120px; margin-right: 50px;">
 
 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
 
 <!-- Left side: text -->
 <div style="flex: 1; min-width: 300px;">
 
-<h1>Anna Kopatko</h1>
 <h2>Perception Engineer | Deep Learning | Physics Enthusiast</h2>
 
 <p>I'm Anna Kopatko, a deep learning engineer based in Berlin, Germany.  
@@ -28,16 +24,18 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
 
 </div>
 
-<!-- Right side: image and contact info -->
-<div style="flex: 0 0 250px; text-align: center;">
+<!-- Right side: photo -->
+<div style="flex: 0 0 350px; text-align: center;">
 
-<img src="/assets/anna.jpg" alt="Anna Kopatko" style="width: 200px; height: 200px; object-fit: cover; border-radius: 100%; margin-bottom: 20px;">
+<img src="/assets/anna.jpg" alt="Anna Kopatko" style="width: 320px; height: 320px; object-fit: cover; border-radius: 100%; margin-bottom: 20px;">
 
 <p><b>Berlin, Germany</b></p>
 
 </div>
 
 </div>
+
+</div> <!-- end margin wrapper -->
 
 ---
 
