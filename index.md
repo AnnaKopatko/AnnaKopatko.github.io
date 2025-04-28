@@ -3,10 +3,11 @@ layout: default
 title: "Anna Kopatko"
 subtitle: "Perception Engineer | Deep Learning | Physics Enthusiast"
 ---
-
 <!-- Import Manrope font -->
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+
 </head>
 
 <!-- Profile Section -->
