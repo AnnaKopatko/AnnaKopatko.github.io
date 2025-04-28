@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-.container, .post, main {
+main, .container, .post {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -14,24 +14,16 @@ body {
 }
 
 img {
-    float: left;
-    width: 250px;
+    max-width: 100%;
     height: auto;
-    margin-right: 30px;
-    margin-bottom: 15px;
     border-radius: 10px;
 }
 
-.container::after, .post::after, main::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-p, h1, h2, h3, h4, h5, h6, ul, ol {
-    margin-left: 20px; /* Slight indentation for text */
+p, h1, h2, h3, ul, ol {
+    margin-left: 20px; 
 }
 
 a {
     color: lightblue;
 }
+
