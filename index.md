@@ -9,18 +9,17 @@ subtitle: "Perception Engineer | Deep Learning | Physics Enthusiast"
 <!-- Left side: text -->
 <div style="flex: 1; min-width: 300px;">
 
-# Anna Kopatko
+<h1>Anna Kopatko</h1>
+<h2>Perception Engineer | Deep Learning | Physics Enthusiast</h2>
 
-## Perception Engineer | Deep Learning | Physics Enthusiast
+<p>I'm Anna Kopatko, a deep learning engineer based in Berlin, Germany.  
+I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a strong foundation in mathematical modeling and complex systems.</p>
 
-I'm Anna Kopatko, a deep learning engineer based in Berlin, Germany.  
-I hold a bachelor's degree in **Theoretical Physics**, where I developed a strong foundation in mathematical modeling and complex systems.
+<p>Currently, I work in <b>perception engineering</b>, where I <b>research, implement, and deploy</b> diverse <b>neural network models</b> for real-world applications — including object detection, segmentation, and sensor fusion.</p>
 
-Currently, I work in **perception engineering**, where I **research, implement, and deploy** diverse **neural network models** for real-world applications — including object detection, segmentation, and sensor fusion.
+<p>I'm passionate about combining <b>physics and neural networks</b> to build <b>robust, explainable AI systems</b> that can transform scientific discovery and technology.</p>
 
-I'm passionate about combining **physics and neural networks** to build **robust, explainable AI systems** that can transform scientific discovery and technology.
-
-Feel free to explore my projects, blog posts, and get in touch!
+<p>Feel free to explore my projects, blog posts, and get in touch!</p>
 
 </div>
 
@@ -29,7 +28,7 @@ Feel free to explore my projects, blog posts, and get in touch!
 
 <img src="/assets/anna.jpg" alt="Anna Kopatko" style="width: 200px; height: 200px; object-fit: cover; border-radius: 100%; margin-bottom: 20px;">
 
-**Berlin, Germany**
+<p><b>Berlin, Germany</b></p>
 
 </div>
 

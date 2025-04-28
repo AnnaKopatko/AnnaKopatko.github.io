@@ -1,13 +1,13 @@
 body {
-    background-color: #1a0d07; /* updated: very dark brown */
-    color: #ffffff;
+    background-color: #120a05; /* darker, less warm */
+    color: #f0f0f0; /* almost pure soft white */
     font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
     line-height: 1.6;
     padding: 20px;
   }
   
   a {
-    color: #ffcc99;
+    color: #cccccc; /* softer, silver links */
     text-decoration: none;
   }
   
@@ -16,7 +16,7 @@ body {
   }
   
   h1, h2, h3, h4 {
-    color: #ffebcd;
+    color: #f5f5f5; /* slightly brighter headings */
   }
   
   img {
@@ -26,7 +26,7 @@ body {
   }
   
   code, pre {
-    background-color: #3d2b1f; /* stays dark brown for code blocks */
+    background-color: #2a1a10; /* very dark brown for code blocks */
     color: #ffffff;
     padding: 5px;
     border-radius: 5px;
