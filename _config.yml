@@ -1,1 +1,10 @@
-theme: minima
+sass:
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      css: /assets/css/style.css

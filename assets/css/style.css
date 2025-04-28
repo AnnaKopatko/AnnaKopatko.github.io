@@ -1,0 +1,19 @@
+body {
+    background-color: #2c1b12; /* very dark brown */
+    color: #ffffff; /* white text for readability */
+  }
+  
+  a {
+    color: #ffcc99; /* soft light brown links */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffebcd; /* slightly lighter headings */
+  }
+  
+  /* Optional: make code blocks or quotes nicer */
+  code, pre {
+    background-color: #3d2b1f;
+    color: #ffffff;
+  }
+  
