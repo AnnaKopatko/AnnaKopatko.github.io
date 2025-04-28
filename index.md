@@ -3,12 +3,6 @@ layout: default
 title: "Anna Kopatko"
 subtitle: "Perception Engineer | Deep Learning | Physics Enthusiast"
 ---
-<!-- Import Manrope font -->
-<head>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
-
-</head>
 
 <!-- Profile Section -->
 <div style="margin-left: 120px; margin-right: 50px; font-size: 22px;">
@@ -49,7 +43,6 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
 
 # Latest Posts
 
-<!-- Posts Section -->
 <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 40px; margin-left: 120px; margin-right: 50px;">
 
 {% for post in site.posts %}
