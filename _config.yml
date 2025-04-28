@@ -1,14 +1,8 @@
 theme: null
 markdown: kramdown
+baseurl: "/COMPREHENSIVE-DEPLOYMENT-GUIDE"  # Replace with your actual repository name
+url: "https://yourusername.github.io"       # Replace with your GitHub username
 collections:
   posts:
     output: true
-permalink: /:title
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      head: |
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/css/style.css">
+    permalink: /:title
