@@ -1,6 +1,6 @@
 theme: null
 markdown: kramdown
-baseurl: "/COMPREHENSIVE-DEPLOYMENT-GUIDE"  # Replace with your actual repository name
+baseurl: ""  # Replace with your actual repository name
 url: "https://AnnaKopatko.github.io"       # Replace with your GitHub username
 collections:
   posts:
