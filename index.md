@@ -11,7 +11,7 @@ subtitle: "Perception Engineer | Physics"
 </head>
 
 <!-- Profile Section -->
-<div style="margin-left: 120px; margin-right: 50px; font-size: 16px; line-height: 1.7;">
+<div class="container" style="margin-left: 120px; margin-right: 50px; font-size: 16px; line-height: 1.7;">
 
 <h1 style="font-weight:700; font-size: 32px;">Anna Kopatko</h1>
 <h2 style="font-weight:600; font-size: 24px;">Perception Engineer | Deep Learning | Physics Enthusiast</h2>
@@ -32,12 +32,8 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
 
 </div>
 
-
-# Latest Posts
-
-<!-- Posts Section -->
-<div style="display: flex; flex-direction: column; gap: 20px; margin-top: 40px; margin-left: 120px; margin-right: 50px;">
-
+<!-- Latest Posts -->
+<div class="container" style="display: flex; flex-direction: column; gap: 20px; margin-top: 40px; margin-left: 120px; margin-right: 50px;">
 {% for post in site.posts %}
   <div>
     <a href="{{ post.url }}" style="font-family: 'Manrope', sans-serif; font-size: 20px; color: #cccccc; text-decoration: none;">
@@ -46,5 +42,4 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
     <div style="font-size: 14px; color: #888888;">{{ post.date | date: "%B %d, %Y" }}</div>
   </div>
 {% endfor %}
-
 </div>
