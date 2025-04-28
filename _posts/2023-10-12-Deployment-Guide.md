@@ -12,7 +12,7 @@ Before diving into TensorRT conversion, it’s important to understand a few **g
 - The model must operate on **a single device** (typically a single GPU).
 -  All data passed through the model must be **PyTorch tensors** — no NumPy arrays or other formats.
 -  All functions inside the model must be **PyTorch operations** — external functions (like OpenCV operations) are not supported inside the model graph.
-![general_idea](/assets/Quantization.png)
+![general_idea](/assets/quantization.png)
 In this article, we will use a simple example called **CombinedNet**, which consists of several sub-networks and a decision gate:
 
 ```
