@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Deployment Guide"
 date: 2023-10-12
 ---
