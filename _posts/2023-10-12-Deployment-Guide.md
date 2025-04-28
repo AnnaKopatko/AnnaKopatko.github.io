@@ -4,6 +4,9 @@ title: "Deployment Guide"
 date: 2023-10-12
 ---
 
+## Introduction
+
+In this project, I give a short overview of the different options you have for exporting and running a deep learning model — beyond just saving a checkpoint. I focus on the different ways you can bring a model into C++, whether you want to run it as-is or optimize it for better performance. This isn’t a deep dive into how CUDA works, but more of a guide to help you understand the different formats and workflows you can use to get your model running in production.
 
 ## 0. Introduction and General Rules
 
