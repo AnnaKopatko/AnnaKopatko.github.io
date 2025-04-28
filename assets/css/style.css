@@ -46,3 +46,14 @@ body {
     padding: 0 !important;
   }
   
+  /* === Remove default lines and navbars === */
+header, nav, .site-header, .site-nav, .nav, .page-header {
+    display: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  

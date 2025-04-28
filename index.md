@@ -32,7 +32,6 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
 
 </div>
 
----
 
 # Latest Posts
 
