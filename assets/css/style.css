@@ -1,18 +1,18 @@
 body {
-    background-color: #000000; /* pure black */
-    color: #eeeeee; /* soft white text */
+    background-color: #000000;
+    color: #eeeeee;
     font-family: 'Manrope', sans-serif;
-    font-weight: 300; /* thin by default */
+    font-weight: 300;
     font-size: 18px;
     line-height: 1.6;
-    padding: 30px;
     margin: 0;
+    padding: 0 30px;
   }
   
-  h1, h2, h3 {
-    font-weight: 600; /* headings slightly bolder */
+  h1, h2, h3, h4 {
+    font-weight: 600;
+    color: #eeeeee;
     margin-top: 20px;
-    margin-bottom: 10px;
   }
   
   a {
@@ -25,35 +25,20 @@ body {
     text-decoration: underline;
   }
   
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  code, pre {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-  /* Remove any unwanted box styling from pages/posts */
-  .page-content, article {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-  }
-  
-  /* === Remove default lines and navbars === */
-header, nav, .site-header, .site-nav, .nav, .page-header {
+  header, nav, .site-header, .site-nav, .nav, .page-header {
     display: none !important;
     border: none !important;
-    box-shadow: none !important;
     background: none !important;
     height: 0 !important;
     margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Make all post pages clean */
+  .page-content, .post-content, article {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
     padding: 0 !important;
   }
   
