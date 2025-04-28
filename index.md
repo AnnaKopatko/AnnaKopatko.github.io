@@ -4,16 +4,20 @@ title: "Anna Kopatko"
 subtitle: "Perception Engineer | Deep Learning | Physics Enthusiast"
 ---
 
+<!-- Import Manrope font and custom CSS -->
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
 <!-- Profile Section -->
-<div style="margin-left: 120px; margin-right: 50px; font-size: 22px;">
+<div style="margin-left: 120px; margin-right: 50px; font-size: 16px; line-height: 1.7;">
 
-<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
+<h1 style="font-weight:700; font-size: 32px;">Anna Kopatko</h1>
+<h2 style="font-weight:600; font-size: 24px;">Perception Engineer | Deep Learning | Physics Enthusiast</h2>
 
-<!-- Left Side: Text -->
-<div style="flex: 1; min-width: 300px;">
-
-<h1 style="font-weight:700; font-size: 36px;">Anna Kopatko</h1>
-<h2 style="font-weight:600;">Perception Engineer | Deep Learning | Physics Enthusiast</h2>
+<!-- Floating Image -->
+<img src="/assets/anna.jpg" alt="Anna Kopatko" style="width: 260px; height: 260px; object-fit: cover; border-radius: 100%; float: right; margin-left: 30px; margin-bottom: 20px;">
 
 <p>I'm Anna Kopatko, a deep learning engineer based in Berlin, Germany.  
 I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a strong foundation in mathematical modeling and complex systems.</p>
@@ -24,18 +28,7 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
 
 <p>Feel free to explore my projects, blog posts, and get in touch!</p>
 
-</div>
-
-<!-- Right Side: Photo -->
-<div style="flex: 0 0 320px; text-align: center;">
-
-<img src="/assets/anna.jpg" alt="Anna Kopatko" style="width: 320px; height: 320px; object-fit: cover; border-radius: 100%; margin-bottom: 20px;">
-
-<p><b>Berlin, Germany</b></p>
-
-</div>
-
-</div>
+<div style="clear: both;"></div>
 
 </div>
 
@@ -43,6 +36,7 @@ I hold a bachelor's degree in <b>Theoretical Physics</b>, where I developed a st
 
 # Latest Posts
 
+<!-- Posts Section -->
 <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 40px; margin-left: 120px; margin-right: 50px;">
 
 {% for post in site.posts %}
