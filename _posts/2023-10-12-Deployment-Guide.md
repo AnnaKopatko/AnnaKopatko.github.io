@@ -5,7 +5,7 @@ Before diving into TensorRT conversion, it’s important to understand a few **g
 - The model must operate on **a single device** (typically a single GPU).
 -  All data passed through the model must be **PyTorch tensors** — no NumPy arrays or other formats.
 -  All functions inside the model must be **PyTorch operations** — external functions (like OpenCV operations) are not supported inside the model graph.
-![general_idea](Quantization.png)
+![general_idea](/assets/Quantization.png)
 In this article, we will use a simple example called **CombinedNet**, which consists of several sub-networks and a decision gate:
 
 ```
@@ -62,7 +62,7 @@ class CombinedNet(nn.Module):
 
 Understanding **tracing** and **scripting** is essential, regardless of which model-to-engine conversion method you choose.  
 There are two main ways to make a PyTorch model runnable in C++ — without yet quantizing or optimizing it for hardware — using **`torch.jit.script`** or **`torch.jit.trace`**.
-![general_idea](scripting_tracing.png)
+![general_idea](/assets/scripting_tracing.png)
 From the [official documentation](https://pytorch.org/docs/master/jit.html): 
 >TorchScript is a way to create serializable and optimizable models from PyTorch code. Any TorchScript program can be saved from a Python process and loaded in a process where there is no Python dependency.
 It is important to understand, that TorchScript is a general module that is used for both tracing **and** scripting.
@@ -310,7 +310,7 @@ After this change, the script will compile without any warnings.
 
 ## 2. ONNX
 
-![Onnx](onnx.png)
+![Onnx](/assets/onnx.png)
 
 ### 2.1 **What is an ONNX Model?**
 
@@ -405,13 +405,13 @@ Exported graph: graph(%input.1 : Float(1, 3, 224, 224, strides=[150528, 50176, 2
 ```
 
 Then we can go to the Netron site, load the onnx model and get the following graph: 
-![netron](netron_combined_model.png)
+![netron](/assets/netron_combined_model.png)
 
 ----
 
 ### 2.5 ONNX-Runtime 
 
-![OnnxRuntime](onnxruntime.png)
+![OnnxRuntime](/assets/onnxruntime.png)
 ONNX Runtime is a highly flexible and universal inference engine that supports multiple languages, including Python, C++, C#, and Java, and can run models across CPUs, GPUs, mobile devices, and even browsers.  
 You would typically choose ONNX Runtime over TensorRT when you need broad hardware and platform compatibility, such as deploying models on CPUs, mobile devices, or cloud servers.  
 ONNX Runtime is easier to set up compared to TensorRT, supports multiple programming languages, and can even integrate TensorRT internally if GPU-specific acceleration is available.
@@ -446,7 +446,7 @@ if __name__ == "__main__":
 
 ```
 ## 3. TensorRT
-![TensorRT](tensorrt.png)
+![TensorRT](/assets/tensorrt.png)
 #### 3.1 General information about TensorRT
 
 What is TensorRT? First_lets compare with how PyTorch runs the model. In usual PyTorch inference, the model runs in dynamic eager execution, meaning Python interprets and executes operations one-by-one at runtime. Each layer is processed separately, causing frequent memory reads and writes between layers.
