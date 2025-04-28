@@ -6,6 +6,8 @@ subtitle: "Perception Engineer | Deep Learning | Physics Enthusiast"
 
 # Anna Kopatko
 
+<img src="/assets/anna.jpg" alt="Anna Kopatko" style="float: right; width: 200px; margin-left: 20px; border-radius: 10px;">
+
 ## Perception Engineer | Deep Learning | Physics Enthusiast
 
 I'm Anna Kopatko, a deep learning engineer based in Berlin, Germany.  
@@ -21,5 +23,12 @@ Feel free to explore my projects, blog posts, and reach out if you're interested
 
 ---
 
+# Blog Posts
 
-![Profile Picture](/assets/anna_profile_photo.jpg)
+<ul>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%B %d, %Y" }}
+  </li>
+{% endfor %}
+</ul>
