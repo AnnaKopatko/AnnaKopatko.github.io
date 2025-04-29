@@ -789,11 +789,11 @@ if __name__ == "__main__":
 
 ```
 
-##3 Conclusion
+## 3 Conclusion
 
 Aside from the methods discussed in this article, there are also a few end-to-end packages that can create a TensorRT engine directly from a checkpoint, without requiring manual tracing, scripting, or ONNX conversion.
 I plan to add a section about these packages in the future as I continue working on this guide.
 
 This article is intended as a living document — it will be continuously updated and expanded over time as I explore new tools, workflows, and best practices for model deployment.
 
-Thank you for reading!
+**Thank you for reading!**
