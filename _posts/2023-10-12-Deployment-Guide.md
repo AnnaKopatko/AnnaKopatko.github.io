@@ -8,7 +8,7 @@ date: 2023-10-12
 
 In this project, I give a short overview of the different options you have for exporting and running a deep learning model — beyond just saving a checkpoint. I focus on the different ways you can bring a model into C++, whether you want to run it as-is or optimize it for better performance. This isn’t a deep dive into how CUDA works, but more of a guide to help you understand the different formats and workflows you can use to get your model running in production.
 
-## 0. Introduction and General Rules
+## 0.General Rules
 
 Before diving into TensorRT conversion, it’s important to understand a few **general rules** that always apply when converting a PyTorch model to a TensorRT engine, **regardless of the specific conversion method** you choose:
 
@@ -789,7 +789,7 @@ if __name__ == "__main__":
 
 ```
 
-## 3 Conclusion
+## 3. Conclusion
 
 Aside from the methods discussed in this article, there are also a few end-to-end packages that can create a TensorRT engine directly from a checkpoint, without requiring manual tracing, scripting, or ONNX conversion.
 I plan to add a section about these packages in the future as I continue working on this guide.
