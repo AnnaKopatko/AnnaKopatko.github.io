@@ -605,6 +605,7 @@ trtexec \
 | `--workspace=4096`            | Workspace memory in MB (larger is better for performance tuning) |
 | `--minShapes`, `--optShapes`, `--maxShapes` | Set minimum, optimal, and maximum input shapes (for dynamic batch sizes) |
 | `--explicitBatch`             | Required for dynamic shapes (ONNX models usually use explicit batch) |
+
 If you want to have a but more control over the model export process, you can use python api:
 ```
 import os
@@ -787,3 +788,12 @@ if __name__ == "__main__":
     print("Output:", output)
 
 ```
+
+##3 Conclusion
+
+Aside from the methods discussed in this article, there are also a few end-to-end packages that can create a TensorRT engine directly from a checkpoint, without requiring manual tracing, scripting, or ONNX conversion.
+I plan to add a section about these packages in the future as I continue working on this guide.
+
+This article is intended as a living document — it will be continuously updated and expanded over time as I explore new tools, workflows, and best practices for model deployment.
+
+Thank you for reading!
